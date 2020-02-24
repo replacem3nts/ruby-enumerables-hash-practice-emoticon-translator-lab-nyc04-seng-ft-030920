@@ -5,7 +5,7 @@ def load_library(file)
   emo = YAML.load_file(file)
   translator = {}
   emo.each do |meaning| 
-    translator["get_meaning": meaning] = []
+    translator["get_meaning": meaning]
   end
   pp translator
 end
