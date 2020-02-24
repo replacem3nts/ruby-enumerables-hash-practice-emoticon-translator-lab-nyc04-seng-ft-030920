@@ -3,7 +3,7 @@ require "pp"
 
 def load_library(file)
   emo = YAML.load_file(file)
-  translator = {}
+  translator = {"get_meaning": emo}
   emo.each do |meaning|
     if !translator["get_meaning": meaning]
       translator = {"get_meaning": meaning}
