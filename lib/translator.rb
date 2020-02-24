@@ -2,7 +2,7 @@ require "yaml"
 require "pp"
 
 def load_library(file)
-  emo = YAML.load_file(emoticons.yml)
+  emo = YAML.load_file(file)
   pp emo
 end
 
