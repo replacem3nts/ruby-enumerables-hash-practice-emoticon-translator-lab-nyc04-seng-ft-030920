@@ -6,6 +6,7 @@ def load_library(file)
   translator = {}
   emo.each do |meaning| 
     translator["get_meaning": meaning] = []
+  end
   pp translator
 end
 
