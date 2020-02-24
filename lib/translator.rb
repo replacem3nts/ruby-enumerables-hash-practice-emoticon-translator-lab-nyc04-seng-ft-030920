@@ -5,7 +5,10 @@ def load_library(file)
   emo = YAML.load_file(file)
   translator ={}
   translator["get_meaning"] = emo
-  emo.each
+  translator["get_emoticon"] = {}
+  emo.each_pair do |meaning, emoticon|
+    translator["get_emoticon"][emoticon] = meaning
+  end
   pp translator
 end
 
