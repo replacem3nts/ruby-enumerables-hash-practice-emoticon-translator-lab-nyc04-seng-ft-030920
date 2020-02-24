@@ -8,7 +8,7 @@ def load_library(file)
   jap = 1
   translator["get_meaning"] = {}
   emo.each_pair do |meaning, emoticon|
-    translator["get_meaning"][emoticon][jap] = meaning
+    translator["get_meaning"][[emoticon][jap]] = meaning
   end
   translator["get_emoticon"] = {}
   emo.each_pair do |meaning, emoticon|
