@@ -3,6 +3,7 @@ require "pp"
 
 def load_library(file)
   emo = YAML.load_file(file)
+  emo.each do (meaning)
   pp emo
 end
 
