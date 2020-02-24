@@ -6,7 +6,8 @@ def load_library(file)
   translator = {}
   emo.each do |meaning|
     if !translator["get_meaning": meaning]
-    translator = {"get_meaning": meaning}
+      translator = {"get_meaning": meaning}
+    end
   end
   pp translator
 end
