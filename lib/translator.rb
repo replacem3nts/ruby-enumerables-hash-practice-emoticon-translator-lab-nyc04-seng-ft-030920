@@ -1,5 +1,4 @@
 require "yaml"
-require "pp"
 
 def load_library(file)
   emo = YAML.load_file(file)
