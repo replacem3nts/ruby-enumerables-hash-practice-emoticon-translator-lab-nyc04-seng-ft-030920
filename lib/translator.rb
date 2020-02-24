@@ -12,7 +12,7 @@ def load_library(file)
   end
   translator["get_emoticon"] = {}
   emo.each_pair do |meaning, emoticon|
-    translator["get_emoticon"][emoticon] = meaning
+    translator["get_emoticon"][emoticon[eng]] = [emoticon[jap]]
   end
   pp translator
 end
