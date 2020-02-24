@@ -3,6 +3,7 @@ require "pp"
 
 def load_library(file)
   emo = YAML.load_file(file)
+  translator = {}
   emo.transform_keys! {|meaning| {"get_meaning": meaning}}
   pp emo
 end
