@@ -4,8 +4,9 @@ require "pp"
 def load_library(file)
   emo = YAML.load_file(file)
   translator = {}
-  emo.transform_keys! {|meaning| {"get_meaning": meaning}}
-  pp emo
+  emo.each do |meaning| 
+    translator["get_meaning": meaning] = []
+  pp translator
 end
 
 def get_japanese_emoticon
