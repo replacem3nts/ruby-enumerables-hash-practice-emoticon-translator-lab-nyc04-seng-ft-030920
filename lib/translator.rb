@@ -14,11 +14,11 @@ def load_library(file)
   emo.each_pair do |meaning, emoticon|
     translator["get_emoticon"][emoticon[eng]] = emoticon[jap]
   end
-  pp translator
+  translator
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(file, emoticon)
+  
 end
 
 def get_english_meaning
